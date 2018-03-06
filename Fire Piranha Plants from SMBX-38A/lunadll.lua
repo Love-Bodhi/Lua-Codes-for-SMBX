@@ -2,7 +2,7 @@ local pNPC = API.load("pnpc")
 local rng = API.load("rng")
 
 function onTick()
-for _,firepiranha1 in pairs(NPC.get(8,player.section)) do
+for _,firepiranha1 in ipairs(NPC.get(8,player.section)) do
 if firepiranha1.ai2 == 2 then
 if firepiranha1.ai1 == 5 then
 fireball1 = pNPC.wrap(NPC.spawn(202,firepiranha1.x+8,firepiranha1.y,player.section))
@@ -17,7 +17,7 @@ fireball3.speedX = rng.random(-4.5,4.5)
 end
 end
 end
-for _,firepiranha2 in pairs(NPC.get(51,player.section)) do
+for _,firepiranha2 in ipairs(NPC.get(51,player.section)) do
 if firepiranha2.ai2 == 2 then
 if firepiranha2.ai1 == 5 then
 fireball4 = pNPC.wrap(NPC.spawn(202,firepiranha2.x+8,firepiranha2.y+32,player.section))
