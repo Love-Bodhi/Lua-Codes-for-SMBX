@@ -1,0 +1,9 @@
+width=16
+height=16
+gfxwidth=16
+gfxheight=16
+frames=4
+nohurt=0
+jumphurt=1
+noblockcollision=1
+framespeed=6
